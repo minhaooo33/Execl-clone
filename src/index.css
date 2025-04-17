@@ -7,7 +7,7 @@
   left: 100%;  
   transform: translateX(-100%); 
   margin: 0;
-  width: 45%;
+  width: clamp(280px, 45vw, 480px);
   border: none;
   padding: 0;
   background: none;
@@ -15,6 +15,12 @@
   bottom:0;
   height: 100vh;
   max-height: 100vh !important;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    width: 95vw;
+  }
 }
 
 .modal-aside {
